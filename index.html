@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,21 +26,31 @@
             height: auto;
             display: block;
         }
+        @media (max-width: 900px) {
+            .gallery {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (max-width: 600px) {
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+        }
     </style>
 </head>
 <body>
     <h1>Les Créations de Doudou</h1>
-    <p>Voici quelques unes de mes créations :</p>
+    <p>Voici quelques-unes de mes créations :</p>
     <div class="gallery">
-        <img src="https://picsum.photos/300" alt="Image 1">
-        <img src="https://picsum.photos/300" alt="Image 1">
-        <img src="https://picsum.photos/300" alt="Image 1">
-        <img src="https://picsum.photos/300" alt="Image 1">
-        <img src="https://picsum.photos/300" alt="Image 1">
-        <img src="https://picsum.photos/300" alt="Image 1">
-        <img src="https://picsum.photos/300" alt="Image 1">
-        <img src="https://picsum.photos/300" alt="Image 1">
-        <img src="https://picsum.photos/300" alt="Image 1">
+        <img src="https://picsum.photos/id/28/300/300" alt="Image 1">
+        <img src="https://picsum.photos/id/29/300/300" alt="Image 1">
+        <img src="https://picsum.photos/id/30/300/300" alt="Image 1">
+        <img src="https://picsum.photos/id/31/300/300" alt="Image 1">
+        <img src="https://picsum.photos/id/32/300/300" alt="Image 1">
+        <img src="https://picsum.photos/id/33/300/300" alt="Image 1">
+        <img src="https://picsum.photos/id/34/300/300" alt="Image 1">
+        <img src="https://picsum.photos/id/35/300/300" alt="Image 1">
+        <img src="https://picsum.photos/id/36/300/300" alt="Image 1">
     </div>
 </body>
 </html>
