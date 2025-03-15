@@ -11,7 +11,7 @@
     <h1>Les Créations de Doudou</h1>
     <p>Voici quelques-unes de mes créations :</p>
     <div class="gallery">
-        {% assign images = site.static_files | where: "path", "/assets/images" %}
+        {% assign images = site.static_files | where: "image", true %}
         {% for image in images %}
             <img src="{{ image.path | relative_url }}" alt="" loading="lazy">
         {% endfor %}
