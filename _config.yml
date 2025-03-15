@@ -3,7 +3,8 @@ description: Une sélection des créations de Doudou
 baseurl: ""
 author:
   name: "Doudou Créations"
-  email: "doudoucrea25@gmail.com"  # Replace with your email
+  email: "doudoucrea25@gmail.com"
+theme: "minima"
 markdown: kramdown
 plugins:
   - jekyll-feed
