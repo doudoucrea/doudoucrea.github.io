@@ -4,7 +4,6 @@ baseurl: ""
 author:
   name: "Doudou Créations"
   email: "doudoucrea25@gmail.com"  # Replace with your email
-theme: "minimal"  # You can specify a theme if desired
 markdown: kramdown
 plugins:
   - jekyll-feed
