@@ -9,9 +9,11 @@ markdown: kramdown
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
-include:
-  - assets
-
+defaults:
+  - scope:
+      path: "assets/images"
+    values:
+      image: true
 # Build settings
 exclude:
   - README.md
