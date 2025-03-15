@@ -1,0 +1,21 @@
+title: Les Créations de Doudou
+description: Une sélection des créations de Doudou
+baseurl: ""
+author:
+  name: "Doudou Créations"
+  email: "doudoucrea25@gmail.com"  # Replace with your email
+theme: "minimal"  # You can specify a theme if desired
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+include:
+  - assets
+
+# Build settings
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - .gitignore
+  - .DS_Store

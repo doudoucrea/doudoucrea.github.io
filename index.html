@@ -4,53 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Les Créations de Doudou</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            margin: 0;
-            padding: 0;
-        }
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 10px;
-            max-width: 1200px;
-            margin: 20px;
-        }
-        .gallery img {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-        @media (max-width: 900px) {
-            .gallery {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-        @media (max-width: 600px) {
-            .gallery {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="{{ '/assets/styles.css' | relative_url }}">
 </head>
 <body>
+    {% include header.html %}
     <h1>Les Créations de Doudou</h1>
     <p>Voici quelques-unes de mes créations :</p>
     <div class="gallery">
-        <img src="https://picsum.photos/id/28/300/300" alt="Image 1" loading="lazy">
-        <img src="https://picsum.photos/id/29/300/300" alt="Image 2" loading="lazy">
-        <img src="https://picsum.photos/id/30/300/300" alt="Image 3" loading="lazy">
-        <img src="https://picsum.photos/id/31/300/300" alt="Image 4" loading="lazy">
-        <img src="https://picsum.photos/id/32/300/300" alt="Image 5" loading="lazy">
-        <img src="https://picsum.photos/id/33/300/300" alt="Image 6" loading="lazy">
-        <img src="https://picsum.photos/id/34/300/300" alt="Image 7" loading="lazy">
-        <img src="https://picsum.photos/id/35/300/300" alt="Image 8" loading="lazy">
-        <img src="https://picsum.photos/id/36/300/300" alt="Image 9" loading="lazy">
+        {% assign images = site.static_files | where: "path", "/assets/images" %}
+        {% for image in images %}
+            <img src="{{ image.path | relative_url }}" alt="" loading="lazy">
+        {% endfor %}
     </div>
 </body>
 </html>
