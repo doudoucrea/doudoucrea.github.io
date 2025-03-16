@@ -1,11 +1,21 @@
 categories:
   - title: Vêtements
+    folder_name: vetements
   - title: Robes
+    folder_name: robes
   - title: Pantalons
+    folder_name: pantalons
   - title: Chemises
+    folder_name: chemises
   - title: Ensembles
+    folder_name: ensembles
   - title: Accessoires
+    folder_name: accessoires
   - title: Sacs à dos
+    folder_name: sac-a-dos
   - title: Sacs de ville
+    folder_name: sacs-de-ville
   - title: Pochettes
+    folder_name: pochettes
   - title: Divers déco
+    folder_name: divers-deco
