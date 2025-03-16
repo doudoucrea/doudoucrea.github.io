@@ -14,5 +14,5 @@
   - <img width="285" alt="Screenshot 2025-03-16 at 10 31 36" src="https://github.com/user-attachments/assets/6439b2ea-8d26-4a84-9739-e189aa543258" />
   - Etape 5 : Exporter
   - <img width="323" alt="Screenshot 2025-03-16 at 09 57 57" src="https://github.com/user-attachments/assets/4242e2c6-3aff-4401-b985-e4d0ca10f64a" />
-3. Si format JPEG, aller sur https://compressjpeg.com/ > Upload > Download All
+3. Compresser l'image JPEG en allant sur https://compressjpeg.com/ > Upload > Download All
  
