@@ -16,16 +16,6 @@
             margin: 0;
             padding: 0;
         }
-        .image-row {
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-        }
-        .image-row img {
-            width: auto;
-            height: auto;
-            max-width: 100%;
-        }
         .gallery {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -52,9 +42,10 @@
 </head>
 <body>
     <h1>{{ site.title }}</h1>
-    <div class="image-row">
+    <div class="gallery">
         <img src="images/presentation-couture-1-500x442.jpg">
         <img src="images/presentation-couture-2-500x374.jpg">
+        <img src="images/presentation-3.jpg">
     </div>
     <p>Voici quelques-unes de mes créations :</p>
 
