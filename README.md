@@ -3,7 +3,7 @@
 
 ## Comment compresser une image
 - Si format HEIF, aller sur https://www.freeconvert.com/heif-to-jpg pour transformer le fichier en JPEG
-- Aller sur Photopea.com
+- Aller sur [Photopea.com](https://photopea.com)
   - Etape 1
   - <img width="599" alt="Screenshot 2025-03-16 at 09 52 35" src="https://github.com/user-attachments/assets/3a62b6ff-127d-4762-a444-d1dab37fd836" />  
   - Etape 2 : Aller dans Image > image size
