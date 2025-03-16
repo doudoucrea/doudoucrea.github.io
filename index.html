@@ -43,18 +43,22 @@
 <body>
     <h1>{{ site.title }}</h1>
     <p>Voici quelques-unes de mes créations :</p>
-    <h2>Images</h2>
+    <h2>Robes</h2>
     <div class="gallery">
-        {% assign images = site.static_files | where: "image", true | where: "path", "images" %}
+        {% assign images = site.static_files | where: "image", true %}
         {% for image in images %}
-            <img src="{{ image.path | relative_url }}" alt="" loading="lazy">
+            {% if file.dir == "/images/robes" %}
+                <img src="{{ image.path | relative_url }}" alt="" loading="lazy">
+            {% endif %}
         {% endfor %}
     </div>
-    <h2>Test</h2>
+    <h2>Pantalons</h2>
     <div class="gallery">
-        {% assign images = site.static_files | where: "image", true | where: "path", "test" %}
+        {% assign images = site.static_files | where: "image", true %}
         {% for image in images %}
-            <img src="{{ image.path | relative_url }}" alt="" loading="lazy">
+            {% if file.dir == "/images/pantalons" %}
+                <img src="{{ image.path | relative_url }}" alt="" loading="lazy">
+            {% endif %}
         {% endfor %}
     </div>
 </body>
