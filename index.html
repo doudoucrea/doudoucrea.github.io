@@ -47,7 +47,7 @@
     <div class="gallery">
         {% assign images = site.static_files | where: "image", true %}
         {% for image in images %}
-            <p>Directory: {{ image.dir }}</p>
+            <p>Directory: {{ image.path }}</p>
             {% if image.dir == "/images/robes" %}
                 <img src="{{ image.path | relative_url }}" alt="" loading="lazy">
             {% endif %}
