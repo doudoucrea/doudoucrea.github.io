@@ -46,7 +46,8 @@
 
     {% for category in site.data.categories.categories %}    
         {% assign found = false %}
-        {% assign images_dir = category.folder_path %}
+        {% assign category_title_lowercase = category.title | downcase %}
+        {% assign images_dir = "/images/" | append: category_title_lowercase | append: "/" %}
         {% assign images = site.static_files | where: "image", true %}
 
         {% for image in images %}
