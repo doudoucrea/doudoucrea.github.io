@@ -47,7 +47,7 @@
     <div class="gallery">
         {% assign images = site.static_files | where: "image", true %}
         {% for image in images %}
-            {% if file.dir == "/images/robes" %}
+            {% if image.dir == "/images/robes" %}
                 <img src="{{ image.path | relative_url }}" alt="" loading="lazy">
             {% endif %}
         {% endfor %}
@@ -56,7 +56,7 @@
     <div class="gallery">
         {% assign images = site.static_files | where: "image", true %}
         {% for image in images %}
-            {% if file.dir == "/images/pantalons" %}
+            {% if image.dir == "/images/pantalons" %}
                 <img src="{{ image.path | relative_url }}" alt="" loading="lazy">
             {% endif %}
         {% endfor %}
