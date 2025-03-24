@@ -14,10 +14,6 @@ defaults:
       path: "images"
     values:
       image: true
-  - scope:
-      path: "test"
-    values:
-      image: true
 # Build settings
 exclude:
   - README.md
